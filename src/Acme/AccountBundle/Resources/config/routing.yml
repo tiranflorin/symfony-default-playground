@@ -1,0 +1,13 @@
+# src/Acme/AccountBundle/Resources/config/routing.yml
+
+acme_account_homepage:
+    pattern:  /account-bundle/{name}
+    defaults: { _controller: AcmeAccountBundle:Default:index }
+
+account_register:
+    path: /account-bundle/register/
+    defaults: { _controller: AcmeAccountBundle:Account:register }
+
+account_create:
+    path: /account-bundle/register/create
+    defaults: { _controller: AcmeAccountBundle:Account:create }
