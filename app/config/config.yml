@@ -67,3 +67,10 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+
+# for an  Exception Listener class:
+#services:
+#    kernel.listener.your_listener_name:
+#      class: Acme\DemoBundle\EventListener\AcmeExceptionListener
+#      tags:
+#        - { name: kernel.event_listener, event: kernel.exception, method: onKernelException }
